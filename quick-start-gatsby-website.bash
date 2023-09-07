@@ -6,15 +6,17 @@ set -e
 
 set -x
 
+cd source-code
+
 ##Install the Gatsby CLI
 
-npm install -g gatsby-cli
+#### npm install -g gatsby-cli
 
-##Install and use the correct version of Node using NVM
+#### npm install -g yarn
 
-npm install nvm
+## Install and use the correct version of Node using NVM
 
-nvm install
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
 ##Install dependencies
 
